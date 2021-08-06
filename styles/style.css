@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+section {
+    margin-bottom: 80px;
+}
+
 .link-button {
     text-decoration: none;
     color: #FFFFFF;
@@ -22,7 +26,7 @@ body {
 
 .link-button .fa-arrow-right {
     margin-left: 8px;
-    transition: margin 0.5s;
+    transition: margin 0.3s;
 
 }
 
@@ -55,4 +59,38 @@ top-banner section style
     width: 660px;
     height: 440px;
 }
+
+/* --------------
+Footballer bio styles
+----------------- */
+
+.footballer-bio {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footballers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.footballers-grid .footballer {
+    width: 330px;
+    height: 475px;
+    padding: 15px;
+    box-shadow: 0 0 20px gray; 
+}
+
+.footballer .player-image img {
+    width: 100%;
+    height: 256px;
+}
+ .footballer .player-details p {
+     color: #6C6C6C;
+     font-size: 16px;
+     line-height: 26px;
+ }
+
 
