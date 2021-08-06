@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-section {
+section{
     margin-bottom: 80px;
 }
 
@@ -81,6 +81,7 @@ Footballer bio styles
     height: 475px;
     padding: 15px;
     box-shadow: 0 0 20px gray; 
+    border-radius: 5px;
 }
 
 .footballer .player-image img {
@@ -92,5 +93,75 @@ Footballer bio styles
      font-size: 16px;
      line-height: 26px;
  }
+
+ /* ------------
+ Footer styles 
+ ---------------*/
+
+ footer {
+     margin-top: 100px;
+ }
+
+ .footer-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .footer-container .social-links .social-icon {
+     width: 40px;
+     height: 40px;
+     font-size: 18px;
+     color: gray;
+     font-weight: 700;
+     background-color: #E6E6E7;
+     text-align: center;
+     border-radius: 50%;
+     line-height: 40px;
+     margin-right: 20px;
+     transition: transform 1s;
+ }
+  
+ .footer-container .social-links .social-icon:hover {
+     transform: rotate(360deg) scale(1.5);
+     background-color: #FFFFFF;
+     color: #007ACC;
+ }
+
+  /* --------------
+ Media queries
+ ---------------- *
+
+ /* Mobiel Device */
+
+ @media only screen and (max-width: 688px) {
+    .banner-intro {
+        flex-direction: column;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    .footballers-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+ }
+
+  /* Tablet Device */
+
+  @media only screen and (min-width: 688px) and (max-width: 992px) {
+   
+    .banner-intro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footballers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
 
